@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name = Rohan Deuja
+    Student ID = C0957767 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="images/fav.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/fav.jpg" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav.jpg" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <!-- Logo linking back to the home page -->
+      <a href="index.html">
+        <img src="images/logo.png" alt="Grill Master Logo" />
+      </a>
+      <!-- Navigation Links -->
+      &nbsp; &nbsp;
+      <a href="index.html">Shop</a> &nbsp; &nbsp;
+      <a href="specials.html">Specials</a> &nbsp; &nbsp;
+      <a href="about.html">About</a> &nbsp; &nbsp;
+      <a href="team.html">Our Team</a> &nbsp; &nbsp;
+      <a href="training.html">Training</a> &nbsp; &nbsp;
+      <a href="contact.html">Contact Us</a> &nbsp; &nbsp;
+      <a href="faq.html">FAQ</a>&nbsp; &nbsp;
+      <a href="media.html">Media</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="contact-main">
+      <!-- Page Header -->
+      <section class="contact-header">
+        <h1>Contact Grill Master Innovations</h1>
+        <p>We're here to help with all your grilling needs</p>
+      </section>
+
+      <!-- Two-Column Layout -->
+      <div class="contact-container">
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm" class="contact-form">
+            <fieldset>
+              <legend>Personal Information</legend>
+
+              <div class="form-group">
+                <label for="name">Full Name*</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your full name"
+                  autofocus
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(123) 456-7890"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Inquiry Details</legend>
+
+              <div class="form-group">
+                <label for="product">Product Interest</label>
+                <select id="product" name="product">
+                  <option value="">Select a product category</option>
+                  <option value="gas">Gas Grills</option>
+                  <option value="charcoal">Charcoal Grills</option>
+                  <option value="electric">Electric Grills</option>
+                  <option value="accessories">Accessories</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message*</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="How can we help you?"
+                ></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <label for="newsletter">Subscribe to our newsletter</label>
+              </div>
+            </fieldset>
+
+            <div class="form-buttons">
+              <button type="submit" class="submit-btn">Send Message</button>
+              <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- FAQ & Contact Info Section -->
+        <aside class="faq-contact-section">
+          <div class="contact-info">
+            <h2>Visit or Call Us</h2>
+            <address>
+              <strong>Grill Master Innovations</strong><br />
+              210 Devine Street<br />
+              Sarnia, ON N9S 1S1<br /><br />
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.91261677735!2d-87.73187899999999!3d41.83371054999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sca!4v1737941074437!5m2!1sen!2sca"
+                width="300"
+                height="230"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe
+              ><br />
+              <strong>Phone:</strong> 737-458-2398<br />
+              <strong>Email:</strong> info@grillmaster.com
+            </address>
+
+            <div class="business-hours">
+              <h3>Business Hours</h3>
+              <p>Monday-Friday: 9AM - 6PM</p>
+              <p>Saturday: 10AM - 4PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-accordion">
+              <!-- FAQ Item 1 -->
+              <details class="faq-item">
+                <summary class="faq-question">
+                  What's the warranty period for grills?
+                </summary>
+                <div class="faq-answer">
+                  <p>
+                    Our standard warranty is 3 years for all grills, covering
+                    manufacturing defects. Extended warranties are available for
+                    purchase.
+                  </p>
+                </div>
+              </details>
+
+              <!-- FAQ Item 2 -->
+              <details class="faq-item">
+                <summary class="faq-question">
+                  How do I clean my BBQ grill properly?
+                </summary>
+                <div class="faq-answer">
+                  <p>
+                    For charcoal grills: Empty ashes after each use. For all
+                    grills: Brush grates while warm, clean with mild detergent,
+                    and cover when not in use. Attend our
+                    <a href="training.html">training sessions</a> for detailed
+                    guidance.
+                  </p>
+                </div>
+              </details>
+
+              <!-- FAQ Item 3 -->
+              <details class="faq-item">
+                <summary class="faq-question">
+                  Do you offer assembly services?
+                </summary>
+                <div class="faq-answer">
+                  <p>
+                    Yes! We provide professional assembly for $49.99. All our
+                    training sessions include free assembly demonstrations.
+                  </p>
+                </div>
+              </details>
+
+              <!-- FAQ Item 4 -->
+              <details class="faq-item">
+                <summary class="faq-question">
+                  What payment methods do you accept?
+                </summary>
+                <div class="faq-answer">
+                  <p>
+                    We accept Visa, Mastercard, American Express, PayPal, and
+                    cash for in-store purchases.
+                  </p>
+                </div>
+              </details>
+
+              <!-- FAQ Item 5 -->
+              <details class="faq-item">
+                <summary class="faq-question">
+                  How long does delivery take?
+                </summary>
+                <div class="faq-answer">
+                  <p>
+                    Most orders ship within 1-2 business days. Local delivery
+                    takes 3-5 days, with expedited options available.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; Copyright 2025. All Rights Reserved.</p>
+      <p><a href="mailto:info@grillmaster.com">info@grillmaster.com</a></p>
+      <p>Rohan Deuja &nbsp; &nbsp; C0957767</p>
+    </footer>
+    <script src="scripts/faq.js"></script>
+  </body>
+</html>
