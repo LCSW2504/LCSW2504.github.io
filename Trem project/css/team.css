@@ -1,0 +1,134 @@
+/* 
+Student Name = Rohan Deuja
+Student ID = C0957767 
+*/
+
+/* Team Page Styles */
+.team-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/team-banner.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.team-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.team-section {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: inline-block;
+}
+
+.team-section h2 {
+  text-align: center;
+  color: #e63946;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.team-section h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #e63946;
+  margin: 0.5rem auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.team-member figcaption {
+  padding: 1.5rem;
+}
+
+.team-member h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.position {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.bio {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Values Aside */
+.values {
+  background-color: #f8f9fa;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+}
+
+.values h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.values ul {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.values li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+}
+
+.values li:last-child {
+  border-bottom: none;
+}
+
+.values strong {
+  color: #e63946;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .team-header h1 {
+    font-size: 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

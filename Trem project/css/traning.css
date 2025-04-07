@@ -1,0 +1,189 @@
+/* 
+Student Name = Rohan Deuja
+Student ID = C0957767 
+*/
+
+/* Training Page Styles */
+.training-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.training-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.training-header h1 {
+  color: #e63946;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Table Styles */
+.schedule-section {
+  margin: 3rem 0;
+}
+
+.schedule-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.training-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.training-table th,
+.training-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.training-table th {
+  background-color: #e63946;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.training-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.training-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Availability Status */
+.available {
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+.limited {
+  color: #e9c46a;
+  font-weight: 600;
+}
+
+.full {
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* Benefits Section */
+.benefits {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.benefits h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.benefits-list li:last-child {
+  border-bottom: none;
+}
+
+.benefits-list li::before {
+  content: "•";
+  color: #e63946;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .training-header h1 {
+    font-size: 2rem;
+  }
+
+  .training-table {
+    font-size: 0.85rem;
+  }
+
+  .training-table th,
+  .training-table td {
+    padding: 8px 10px;
+  }
+
+  .benefits {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .training-table {
+    display: block;
+  }
+
+  .training-table thead {
+    display: none;
+  }
+
+  .training-table tbody,
+  .training-table tr,
+  .training-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .training-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .training-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border-bottom: 1px solid #eee;
+  }
+
+  .training-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
